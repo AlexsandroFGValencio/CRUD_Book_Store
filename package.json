@@ -1,0 +1,18 @@
+{
+  "name": "CRUD_Book_Store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AlexsandroFGValencio/CRUD_Book_Store",
+  "author": "AlexsandroFGValencio <alexsandro.valencio@cialdnb.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
