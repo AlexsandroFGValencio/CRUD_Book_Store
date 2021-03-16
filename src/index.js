@@ -26,7 +26,7 @@ app.post('/books', (request, response) => {
 
   books.push(book);
 
-  return response.status(201).json(book);
+  return response.status(201).json(books);
 });
 
 app.get('/books', (request, response) => {
@@ -45,7 +45,7 @@ app.put('/books/:id', (request, response) => {
 
   findBook.title = title;
 
-  return response.json(title);
+  return response.json(books);
 });
 
 app.delete('/books/:id', (request, response) => {
@@ -59,7 +59,7 @@ app.delete('/books/:id', (request, response) => {
 
   books.splice(IndexBook, 1);
 
-  return response.status(200).json({ message: 'Book successfully deleted!' });
+  return response.status(200).json(books);
 });
 
 app.listen(3000);
